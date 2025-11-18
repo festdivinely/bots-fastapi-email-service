@@ -1,0 +1,9 @@
+curl -X POST http://localhost:8000/api/send-email \
+  -H "Content-Type: application/json" \
+  -d '{"type": "email_verification", "to": "festusdivinely@gmail.com", "data": {"code": "123456"}}'
+
+
+
+curl -X POST "https://bots-fastapi-email-service.onrender.com/api/send-email" \
+  -H "Content-Type: application/json" \
+  -d '{"type": "email_verification", "to": "festusdivinely@gmail.com", "data": {"code": "123456"}}'
