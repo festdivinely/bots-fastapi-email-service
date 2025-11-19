@@ -38,10 +38,9 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 
 # Email templates (import from separate files)
-# Use absolute imports
-from .email_templates.email_verification import email_verification_template
-from .email_templates.device_verification import device_verification_template
-from .email_templates.password_reset import password_reset_template
+from src.email_templates.email_verification import email_verification_template
+from src.email_templates.device_verification import device_verification_template
+from src.email_templates.password_reset import password_reset_template
 
 def get_email_template(email_type: str, data: Dict[str, Any]) -> Dict[str, str]:
     """Get the appropriate email template based on type"""
